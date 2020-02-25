@@ -1,0 +1,14 @@
+Step 1.
+# First ensure SSL parts in NGINX config are commented out:
+# include {Cfg.NGINX_CONF_SSL}
+
+Step 2.
+    sudo certbot certonly --nginx --agree-tos --noninteractive --expand --email chainsawmasterinfo@gmail.com --domain chainsawmaster.co.za --domain www.chainsawmaster.co.za
+
+Step 3.
+Re-enabled Nginx SSL remove comment hastags #
+
+Step 4.
+Dry run test:
+    sudo certbot renew --noninteractive --dry-run
+
