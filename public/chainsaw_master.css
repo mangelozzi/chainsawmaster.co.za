@@ -1,0 +1,429 @@
+/* --------------------------------------------------------------- */
+/* --------------------------------------------------------------- */
+/* GENERAL*/
+/* --------------------------------------------------------------- */
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body{
+    /*min-width: 100%;*/
+    color: black;
+    background-color: white;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2vw;
+}
+
+
+section, header, footer {
+    align-content: center;
+    text-align : center;
+    display: block;
+    padding: 0em 2em;    
+}
+
+section {
+    padding-bottom: 2em;
+}
+
+h1 {
+    padding: 1.5em 0em 1em 0em;      
+    font-size : 2em;
+}
+
+h2 {
+    color : #FF6600;    
+    font-size : 1.5em;
+}
+
+p {
+    padding : 0.1em;
+    text-align : left;
+}
+
+a:visited {  
+    color: white;
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF6600;
+    background-color: white;
+    text-decoration: none;
+}
+
+.column_thirds_wrapper{
+    /*width : 80%;        */
+    margin: 0em auto;
+    margin-bottom: 2em;
+} 
+
+.column_thirds{
+    float: left;
+    padding: 0em 1em;
+    width : 33.3%;
+}
+
+.column_clear
+{
+    clear : both;
+}
+
+/* --------------------------------------------------------------- */
+/* MAIN MENU*/
+/* --------------------------------------------------------------- */
+#main_menu {
+    padding: 0em 2em;  
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 100;
+    
+    width: 100%;
+    height: 3em;
+    
+    background-color: white;    
+    overflow: hidden;
+}
+
+#main_menu img {
+    position: absolute ;
+    left: 2em;
+    top: 0.25em;
+    max-height : 2.5em;
+}
+    
+
+#main_menu nav {    
+    position: absolute ;
+    right: 2em;
+    top: 0em;
+    height : 3em;
+    Float: right;
+    padding-right: 2em;
+}
+
+#main_menu li {
+    padding: 1em 0.5em;
+    height : 3em;
+    float : left;
+    list-style : none;
+    vertical-align: center;    
+}
+
+#main_menu a{
+    color:#FF6600;
+    font-weight: bold;
+    background-color:transparent;
+}
+
+#main_menu li:hover, #main_menu a:hover{
+    color:white;
+    background-color:red;
+}
+
+/* --------------------------------------------------------------- */
+/* INTRO */
+/* --------------------------------------------------------------- */
+
+#intro {
+    padding: 0;
+    width : 100%;
+    height: 0;
+    padding-top :60%;
+    color: white; 
+    vertical-align: bottom;
+    position: relative;
+    font-size: 2em;
+    
+    background-image: url("images/cover.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-position: top 1em right 0px;
+    background-attachment: fixed;
+    background-size: 100vw auto;
+    @media screen and (min-aspect-ratio:1){
+        background-size: auto 100vw;
+        height : 100vh;
+    }
+    
+
+    /*background-color : #96b6e5; /*sky blue*/
+}
+
+/*#cover{
+    padding-top: 1.5em;
+    max-width : 100vw;
+    border : 10px solid red;
+}*/
+
+#intro #intro_logo {
+    width : 50%;    
+    position: absolute;
+    left: 2em;
+    bottom: 4em;
+}
+
+#intro p {
+    width : 50%;    
+    position: absolute;
+    left: 2em;
+    bottom: 2em;
+    text-align: left;
+}
+
+/* --------------------------------------------------------------- */
+/* SERVICES */
+/* --------------------------------------------------------------- */
+
+#services {
+    background-color : white;
+    color: black;    
+}
+
+#services img {
+    width :80%;
+}
+
+/* Little rectangle */
+#services .separator {
+    width : 3em;
+    height : 0.3em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#services #service1{
+    background-color: #FF6600;
+}
+
+#services #service2{
+    background-color: #00FF00;
+}
+
+#services #service3{
+    background-color: #FF0000;
+}
+
+
+/* --------------------------------------------------------------- */
+/* TEAM */
+/* --------------------------------------------------------------- */
+#team {
+    background-color : white;
+    color: black;    
+}
+
+#team img {
+    width :80%;
+}
+
+/* --------------------------------------------------------------- */
+/* ABOUT */
+/* --------------------------------------------------------------- */
+
+/*black section*/
+#about {
+    background-color : #333333;    
+    color: white;
+}
+
+#about .letter_from_boss_wrapper {
+    margin: 2em 2em;
+    vertical-align: top;
+    padding: 0;
+    position: relative;
+}
+
+#about .boss_image{
+    width: 30%;
+    margin-right: 2em;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#about .logo {
+    width: 30%;
+    position: absolute;
+    left : 1em;
+    bottom : 7em;
+}
+
+#about .letter_from_boss {
+    width: 55%;
+    display: inline-block;
+    margin-left: 2em;
+    background-color: white;
+    color : navy;    
+    padding: 2em 2em;
+    font-family: serif;
+    font-style: italic;
+
+}
+
+
+#about .letter_from_boss .signature{
+    width: 5em;    
+}
+
+#about .values{
+    display: inline-block;
+    text-align: left;    
+    margin: 0 auto 2em auto;
+    color: white;
+}
+
+#about .column_thirds_wrapper img{    
+    display: block;
+    margin: 0;
+    padding: 0;    
+    width: 100%;
+    max-width: 512px;
+    outline: 10px;    
+    outline-style: solid;
+    outline-color: #333333;
+}
+
+#about .column_thirds {
+    font : 0px;
+    border :0px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+}
+
+#about .column_thirds{
+    font : 0px;
+    float: left;
+    padding: 0em;
+    width : 33.3%;
+    margin : 0 0;
+}
+
+
+/*Orange section*/
+#testimonials {
+    background-color : #008800;
+    color: white;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+.testimonial_wrapper {    
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.testimonial{
+    background-color: white;
+    display : inline-block;
+    width: 39%;    
+    vertical-align: top;
+    margin: 0 5% 10% 5%;
+    font-family: serif;
+    font-style: italic;
+    color: navy;
+    
+    font-size: 1.2em;
+    padding: 1em;
+}
+
+#testimonials .testimonial_name{
+    padding-top: 1em;
+    font-weight: normal;
+    text-align: right;
+    font-weight: bold;
+}
+
+
+#contact {
+    background-color : #FF6600;
+    color: black;
+
+    background-image: url("images/logo_subtle.svg");
+    background-position: center bottom;
+    background-attachment: fixed;
+    background-size: 33.3% auto;
+    color: white; 
+    vertical-align: bottom;
+    position: relative;    
+    align-content: center;
+}
+
+#contact table{
+    max-width: 23em;
+    margin: 0 auto;
+}
+#contact input, #contact textarea{
+    font-size: 1em;
+    text-align: left;
+    width: 30vw;
+    min-width : 13em;    
+    color:black;  
+    display:inline-block;
+}
+
+#contact textarea {
+    height: 5em;
+}
+
+#contact input[type="submit"] {
+    height : 2em;
+    text-align: center;
+}
+
+#contact td{
+    padding : 0.2em;
+    width : 50%;
+    text-align: left; 
+}
+
+#contact td:first-child{
+    text-align: right;    
+}
+
+}
+#contact label {
+    font-weight: bold;
+    color:white;
+    display:inline;
+    max-width: 5em;
+}
+
+footer {
+    background-color : #333333;
+    font-size: 1em;
+}
+
+footer, footer a:visited, footer a:link {  
+    color: #888;
+    font-weight: bold;
+    align-content:center;
+}
+
+footer span{    
+    display: inline-block;
+    justify-content: center;
+    padding: 1em 0.4em;
+}
+
+.fullscreen {
+    max-width: 100%;
+    height: auto;
+}
+
+footer .logo{
+    width : 50%;    
+}
